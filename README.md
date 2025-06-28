@@ -19,11 +19,11 @@ You'll need these Node.js modules:
 - crypto (built-in) for hashing
 - fs and path (built-in) for file system walking
 
-<pre> ```bash npm install sqlite3``` </pre>
+```bash npm install sqlite3```
 
 OR for better-sqlite3 (faster, synchronous, recommended):
 
-<pre> ```bash npm install better-sqlite3``` </pre>
+```bash npm install better-sqlite3```
 ------
 ## 2. Deployment Script (hash and store)
 This script recursively hashes files in a directory and stores (path, hash) in SQLite.
@@ -45,12 +45,10 @@ Place file_hashes.db in your app’s resources or next to app root.
 
 Add the runtime check as an early step in your Electron main.js:
 
-<pre>
 ```js
 require('./check-integrity.js');
 // If check fails, show error dialog and exit or warn user
 ```
-</pre>
 ------
 ## 6. Security Notes & Tips
 Hash the exact files distributed to users, not just your dev copy.
