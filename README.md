@@ -11,7 +11,7 @@ Obviously this may not protect against a changed file that might be cleverly des
 
 ---------------------------
 Using a local SQLite database.
-------
+--
 ## 1. Dependencies ##
 You'll need these Node.js modules:
 
@@ -28,22 +28,22 @@ OR for better-sqlite3 (faster, synchronous, recommended):
 ```bash
 npm install better-sqlite3
 ```
-------
+--
 ## 2. Deployment Script (hash and store) ##
 This script recursively hashes files in a directory and stores (path, hash) in SQLite.
 See [hash-deployment.js](./hash-deployment.js) for the hash-list generation and storage at deployment script.
-------
+--
 ## 3. Runtime Check Script (to be run by Electron at startup) ##
 At app runtime, check each file’s hash against the DB.
 See [check-integrity.js](./check-integrity.js) for the runtime integrity check script.
-------
+--
 ## 4. How to Use ##
 At deployment (before packaging):
 Run node hash-deployment.js to create file_hashes.db.
 
 At runtime (on app start):
 Run node check-integrity.js (or invoke in main process).
-------
+--
 ## 5. Integrate with Electron ##
 Place file_hashes.db in your app’s resources or next to app root.
 
@@ -53,7 +53,7 @@ Add the runtime check as an early step in your Electron main.js:
 require('./check-integrity.js');
 // If check fails, show error dialog and exit or warn user
 ```
-------
+--
 ## 6. Security Notes & Tips ##
 Hash the exact files distributed to users, not just your dev copy.
 
