@@ -1,7 +1,7 @@
 # Thor
 Protection against Electron backdoor vulnerability.
 
-Electron deployments may have vulnerabilities to backdooring as exposed by github.com/boku7/Loki.
+Electron deployments may have vulnerabilities to backdooring as exposed by https://github.com/boku7/Loki.
 
 This vulnerability was been shown to exist in April 2025 for Cursor AI's desktop application in Windows and may exist for other desktop applications such as Microsoft Teams, Discord and other major applicaions used by millions of people and many companies.
 
