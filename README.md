@@ -19,11 +19,15 @@ You'll need these Node.js modules:
 - crypto (built-in) for hashing
 - fs and path (built-in) for file system walking
 
-```bash npm install sqlite3```
+```bash
+npm install sqlite3
+```
 
 OR for better-sqlite3 (faster, synchronous, recommended):
 
-```bash npm install better-sqlite3```
+```bash
+npm install better-sqlite3
+```
 ------
 ## 2. Deployment Script (hash and store)
 This script recursively hashes files in a directory and stores (path, hash) in SQLite.
