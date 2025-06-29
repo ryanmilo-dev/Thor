@@ -10,7 +10,7 @@ I believe this can be mitigated by the process of creating a hash list of existi
 Obviously this may not protect against a changed file that might be cleverly designed to output the same hash, but this would drastically mitigate the vulnerability of deploying a persistent backdoor process that dependently executes at runtime.
 
 ---------------------------
-### Using a local SQLite database. ###
+### Using Node.js and a local SQLite database. ###
 
 ## 1. Dependencies ##
 You'll need these Node.js modules:
